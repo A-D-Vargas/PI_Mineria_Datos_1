@@ -28,3 +28,19 @@ En el cuaderno 04_pca.ipynb se aplicó un escalamiento de datos utilizando Stand
 
 # Visualización Interactiva
 La aplicación desarrollada en Streamlit (app.py) funciona como un portfolio unificado para exponer de manera ordenada la estructura del proyecto. Permite al usuario navegar a través de las diferentes etapas, visualizar la calidad del proceso ETL mediante el registro de logs, revisar los hallazgos de las etapas exploratorias y acceder a las conclusiones finales de forma cómoda e intuitiva.
+
+# Cómo Ejecutar Localmente
+
+1. Clonar el repositorio:
+git clone https://github.com/tu-usuario/tu-repositorio.git
+cd tu-repositorio
+
+# Instalar las dependencias requeridas:
+pip install -r requirements.txt
+
+# Ejecutar la aplicación de Streamlit:
+streamlit run app.py
+
+# Conclusiones
+
+El proyecto permitió concluir en el archivo 05_conclusiones.ipynb que las recomendaciones de catálogo deben personalizarse según el plan del usuario (Drama/Documentales para Premium y Acción/Crimen para Básicos) e independizarse de la edad, la cual demostró no segmentar los gustos. Asimismo, se identificó una alerta comercial crítica: es urgente auditar la infraestructura del servicio Premium en Chile y Perú para solucionar sus fallas técnicas específicas y evitar la pérdida de los clientes de mayor valor económico.
