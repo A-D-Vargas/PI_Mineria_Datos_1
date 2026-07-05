@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Streaming Analytics", layout="wide")
 
 st.title("Análisis de Usuarios de Streaming")
-st.subheader("Proyecto Integrador - Ciencia de Datos I")
+st.subheader("Proyecto Integrador - Mineria de Datos I")
 
 st.markdown("---")
 
