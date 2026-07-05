@@ -1,0 +1,6 @@
+Paso,Descripción,Filas,Nulos,Retención (%)
+1. Carga Inicial,"Lectura del dataset original ('sucio') con anomalías, nulos y texto no estandarizado.",8160,753,100.0
+2. Estandarización de Texto,"Corrección de mayúsculas/minúsculas, espacios y sinónimos en categorías.",8160,513,100.0
+3. Filtrado de Outliers,Eliminación de registros con edades inválidas o tiempos de reproducción fuera de rango.,8095,307,99.2
+4. Depuración de Fechas,Validación y conversión de formatos en 'last_login_date'.,8018,0,98.26
+5. Limpieza de Remanentes,Eliminación final de registros con nulos críticos para consolidar el archivo limpio.,8018,0,98.26
