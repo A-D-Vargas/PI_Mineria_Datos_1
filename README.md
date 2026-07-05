@@ -16,7 +16,31 @@ El conjunto de datos original cuenta con información sobre los clientes de la p
 **Volumen Final**: 8,018 registros estandarizados y sin duplicados.
 
 # Estructura del Repositorio
-
+PI_Mineria_Datos_1/  
+      ├── 1_data/  
+      │ ├── processed/  
+      │ └── raw/   
+      │   
+      ├── 2_notebooks/   
+      │ ├── 01_inspeccion_inicial.ipynb   
+      │ ├── 02_calidad_y_limpieza.ipynb   
+      │ ├── 03_eda.ipynb    
+      │ ├── 04_pca.ipynb   
+      │ └── 05_conclusiones.ipynb   
+      │   
+      ├── 3_app/   
+      │ |── pages/   
+      │ |   ├── 01_Dataset.py    
+      │ |    ├── 02_EDA.py   
+      │ |    ├── 03_PCA.py   
+      │ |    └── 04_Conclusiones.py    
+      │ └── Home.py  
+      ├── 4_reports/   
+      │ └── informe_final.pdf   
+      ├──5_logs/   
+      |└── pipeline_log.csv  
+      |──README.md  
+      └──requirements.txt  
 # Preparación y Calidad de Datos
 El proceso se documentó detalladamente en el notebook 01_etl.ipynb y sus eventos se guardaron en etl_process.log. Las acciones principales incluyeron la eliminación de registros duplicados y el tratamiento de valores nulos en variables clave. Se estandarizaron los nombres de las columnas a formato snake_case y se corrigieron los tipos de datos de las variables categóricas. También se aplicaron filtros de consistencia para asegurar que los minutos de visualización y las edades se encontraran dentro de rangos lógicos y consistentes para el negocio.
 
