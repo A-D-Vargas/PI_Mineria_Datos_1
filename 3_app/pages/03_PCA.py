@@ -27,7 +27,7 @@ try:
     pca = PCA(n_components=2)
     X_pca = pca.fit_transform(X_scaled)
     
-    var_explicada = pca.explained_variance_ratio{}
+    var_explicada = pca.explained_variance_ratio_
     
     col1, col2 = st.columns(2)
     
