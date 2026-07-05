@@ -3,7 +3,7 @@ Este proyecto presenta un análisis de datos enfocado en el comportamiento de co
 
 **Curso**: Mineria de datos 1
 
-App: Panel en Streamlit Cloud (Reemplazar por el enlace real)
+App: Panel en Streamlit Cloud ("https://homepy-c4nkh26iov4xh2kox2fr9l.streamlit.app/")
 
 # Objetivo del Proyecto
 El objetivo principal es analizar el comportamiento de los usuarios, sus preferencias de contenido y los problemas de soporte técnico para descubrir qué factores impulsan el consumo y detectar fallas críticas en el servicio. A través de este análisis, se busca aportar información basada en datos para optimizar la retención de clientes y la personalización del catálogo.
