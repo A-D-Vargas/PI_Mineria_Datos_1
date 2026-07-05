@@ -3,8 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.set_page_config(page_title="EDA", page_icon="📈", layout="wide")
-st.title("📈 Análisis Exploratorio de Datos (EDA)")
+st.set_page_config(page_title="EDA", layout="wide")
+st.title("Análisis Exploratorio de Datos (EDA)")
 st.markdown("---")
 
 url_limpio = 'https://raw.githubusercontent.com/A-D-Vargas/PI_Mineria_Datos_1/refs/heads/main/1_data/processed/streaming_users_limpio.csv'
@@ -12,8 +12,8 @@ url_limpio = 'https://raw.githubusercontent.com/A-D-Vargas/PI_Mineria_Datos_1/re
 try:
     df = pd.read_csv(url_limpio)
     
-    # ----- 1. VISUALIZACIONES UNIVARIADAS (2) -----
-    st.markdown("## 📊 1. Análisis Univariado")
+    # 1. VISUALIZACIONES UNIVARIADAS (2)
+    st.markdown("## 1. Análisis Univariado")
     
     col1, col2 = st.columns(2)
     
@@ -39,7 +39,7 @@ try:
     st.markdown("---")
 
     # ----- 2. VISUALIZACIONES BIVARIADAS (2) -----
-    st.markdown("## 📊 2. Análisis Bivariado")
+    st.markdown("## 2. Análisis Bivariado")
     
     col3, col4 = st.columns(2)
     
@@ -63,8 +63,8 @@ try:
 
     st.markdown("---")
 
-    # ----- 3. VISUALIZACIÓN MULTIVARIADA (1) -----
-    st.markdown("## 📊 3. Análisis Multivariado")
+    # 3. VISUALIZACIÓN MULTIVARIADA (1) 
+    st.markdown("## 3. Análisis Multivariado")
     
     st.markdown("### Correlación Numérica de Variables Clave")
     columnas_num = df.select_dtypes(include=['float64', 'int64']).columns

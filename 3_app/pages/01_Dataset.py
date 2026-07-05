@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Dataset Info", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Dataset Info", layout="wide")
 
-st.title("📊 Estructura y Calidad del Dataset")
+st.title("Estructura y Calidad del Dataset")
 st.markdown("---")
 
-# Links de origen de datos
+# Origen de datos
 url_limpio = 'https://raw.githubusercontent.com/A-D-Vargas/PI_Mineria_Datos_1/refs/heads/main/1_data/processed/streaming_users_limpio.csv'
 
 @st.cache_data
@@ -16,21 +16,21 @@ def cargar_datos():
 try:
     df = cargar_datos()
     
-    st.markdown("### 🔍 Vista Previa del Dataset Limpio")
+    st.markdown("### Vista Previa del Dataset Limpio")
     st.write("Explorá las primeras filas del conjunto de datos ya procesado:")
     st.dataframe(df.head(10), use_container_width=True)
     
-    # Resumen breve de calidad
+    # Resumen
     col1, col2, col3 = st.columns(3)
     col1.metric("Registros Totales Consolidados", f"{len(df)} filas")
     col2.metric("Columnas de Análisis", f"{len(df.columns)} columnas")
-    col3.metric("Valores Nulos Remanentes", "0 nulos")
+    col3.metric("Valores Nulos", "0 nulos")
     
     st.markdown("---")
-    st.markdown("### 📉 Log de Auditoría y Control de Calidad")
+    st.markdown("### Log de Auditoría y Control de Calidad")
     st.write("El dataset original contaba con 8,160 filas. Así evolucionó la retención de registros tras corregir inconsistencias:")
     
-    # Datos de tu tabla de control ajustada a 8,018 registros
+    # Datos de tabla
     pasos_log = [
         {"Paso": "1. Carga Inicial", "Filas": 8160, "Nulos": 753, "Retención": "100.0%"},
         {"Paso": "2. Estandarización de Texto", "Filas": 8160, "Nulos": 513, "Retención": "100.0%"},
@@ -40,7 +40,7 @@ try:
     ]
     st.table(pd.DataFrame(pasos_log))
 
-    st.markdown("### ⚙️ Transformaciones Principales Aplicadas")
+    st.markdown("### Transformaciones Principales Aplicadas")
     st.markdown(
         "* **Normalización de Texto:** Conversión a minúsculas, remoción de espacios y mapeo de sinónimos para consistencia en categorías (ej. de 'std' o 'estandar' a *Estándar*).\n"
         "* **Control de Outliers:** Remoción de edades atípicas y filtrado del flag de error matemático (`99999`) detectado en los minutos de consumo.\n"

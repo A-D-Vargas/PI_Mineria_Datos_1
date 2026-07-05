@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Configuración
-st.set_page_config(page_title="Streaming Analytics - Home", page_icon="🎬", layout="wide")
+st.set_page_config(page_title="Streaming Analytics", layout="wide")
 
 st.title("Análisis de Usuarios de Streaming")
 st.subheader("Proyecto Integrador - Ciencia de Datos I")
@@ -26,14 +26,19 @@ with col1:
 
 with col2:
     st.markdown("### Integrantes")
-    st.markdown("- **Galeano Mariela**")
-    st.markdown("- **Sosa Ramiro**")
-    st.markdown("- **Vargas Alex**")
+    st.markdown("""
+    - **Galeano Mariela**
+    - **Sosa Ramiro**
+    - **Vargas Alex**
+    """)
     
     st.markdown("### Detalles")
-    st.markdown("- **Comisión:** Bandera")
-    st.markdown("- **Fecha:** 4 de Julio 2026")
+    st.markdown("""
+    - **Comisión:** Bandera
+    - **Fecha:** 4 de Julio 2026
+    """)
     
-    # Enlace al repositorio de GitHub
+    st.markdown("---")
+    # Enlace al repositorio de GitHub destacado con un botón oficial de Streamlit
     st.markdown("### Código Fuente")
-    st.markdown("[Repositorio - GitHub](https://github.com/A-D-Vargas/PI_Mineria_Datos_1)")
+    st.link_button("Ver Repositorio en GitHub", "https://github.com/A-D-Vargas/PI_Mineria_Datos_1")
