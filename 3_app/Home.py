@@ -1,40 +1,38 @@
 import streamlit as st
 
-# Configuración de la página
-st.set_page_config(page_title="Proyecto Minería de Datos 1", page_icon="🎬", layout="centered")
+# Configuración de página común
+st.set_page_config(page_title="Streaming Analytics - Home", page_icon="🎬", layout="wide")
 
-st.title(" Análisis de Usuarios de Streaming")
-st.subheader("Proyecto Integrador - Minería de Datos I")
+st.title("🎬 Análisis de Usuarios de Streaming")
+st.subheader("Proyecto Integrador - Ciencia de Datos I")
 
 st.markdown("---")
 
-# Información del proyecto
-col1, col2 = st.columns(2)
+# Columnas para organizar la información
+col1, col2 = st.columns([2, 1])
+
 with col1:
-    st.markdown("### Integrantes:")
-    st.write(''' 
-    **  Galeano Mariela**   
-    **  Sosa Ramiro**   
-    **  Vargas Alex Daniel**  ''')  
+    st.markdown("### 📌 Contexto Breve")
+    st.write(
+        "En el competitivo mercado del streaming actual, retener a los usuarios y optimizar "
+        "los planes de suscripción es crucial. Esta plataforma interactiva presenta el proceso completo "
+        "de auditoría, análisis exploratorio de datos (EDA) y reducción de dimensionalidad (PCA) realizado sobre "
+        "nuestro dataset de comportamiento de suscriptores."
+    )
+    st.write(
+        "A través de esta app, se comunican de forma visual y accesible las métricas clave de consumo, "
+        "la calidad de los datos recopilados y los hallazgos principales que guiarán las decisiones estratégicas de retención."
+    )
+
 with col2:
-    st.markdown("### Detalles:")
-    st.write("- **Comisión:** [Bandera]")
-    st.write("- **Fecha:** 4 de Julio 2026")
-
-st.markdown("---")
-
-# Contexto Breve
-st.markdown("""
-### 📊 Contexto del Proyecto
-Este proyecto tiene como objetivo analizar el comportamiento, consumo y características de los usuarios de una plataforma de streaming audiovisual. 
-Realizamos un proceso completo que abarca desde la limpieza de datos y el Análisis Exploratorio (EDA), hasta la reducción de dimensionalidad mediante **PCA (Análisis de Componentes Principales)**. 
-
-El fin último es identificar patrones clave que permitan entender mejor la retención de usuarios y optimizar las estrategias de la plataforma.
-""")
-
-st.markdown("---")
-
-# Enlace al repositorio de GitHub
-st.markdown("### Código Fuente")
-st.info("Puedes revisar el desarrollo técnico completo, los notebooks de respaldo y el pipeline de datos en nuestro repositorio:")
-st.link_button("Ir al Repositorio de GitHub", "https://github.com/A-D-Vargas/PI_Mineria_Datos_1.git")
+    st.markdown("### 👥 Integrantes")
+    st.markdown("- **A. D. Vargas**")
+    st.markdown("- **Mariela Marisel Galeano**")
+    
+    st.markdown("### 📋 Detalles")
+    st.markdown("- **Comisión:** Comisión 1 (o la correspondiente)")
+    st.markdown("- **Fecha:** Julio 2026")
+    
+    # Enlace al repositorio de GitHub
+    st.markdown("### 🔗 Código Fuente")
+    st.markdown("[Separador de Repositorio - GitHub](https://github.com/A-D-Vargas/PI_Mineria_Datos_1)")
