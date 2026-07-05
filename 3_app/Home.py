@@ -1,18 +1,18 @@
 import streamlit as st
 
-# Configuración de página común
+# Configuración
 st.set_page_config(page_title="Streaming Analytics - Home", page_icon="🎬", layout="wide")
 
-st.title("🎬 Análisis de Usuarios de Streaming")
+st.title("Análisis de Usuarios de Streaming")
 st.subheader("Proyecto Integrador - Ciencia de Datos I")
 
 st.markdown("---")
 
-# Columnas para organizar la información
+# Columnas de información
 col1, col2 = st.columns([2, 1])
 
 with col1:
-    st.markdown("### 📌 Contexto Breve")
+    st.markdown("### Contexto")
     st.write(
         "En el competitivo mercado del streaming actual, retener a los usuarios y optimizar "
         "los planes de suscripción es crucial. Esta plataforma interactiva presenta el proceso completo "
@@ -25,14 +25,15 @@ with col1:
     )
 
 with col2:
-    st.markdown("### 👥 Integrantes")
-    st.markdown("- **A. D. Vargas**")
-    st.markdown("- **Mariela Marisel Galeano**")
+    st.markdown("### Integrantes")
+    st.markdown("- **Galeano Mariela**")
+    st.markdown("- **Sosa Ramiro**")
+    st.markdown("- **Vargas Alex**")
     
-    st.markdown("### 📋 Detalles")
-    st.markdown("- **Comisión:** Comisión 1 (o la correspondiente)")
-    st.markdown("- **Fecha:** Julio 2026")
+    st.markdown("### Detalles")
+    st.markdown("- **Comisión:** Bandera")
+    st.markdown("- **Fecha:** 4 de Julio 2026")
     
     # Enlace al repositorio de GitHub
-    st.markdown("### 🔗 Código Fuente")
-    st.markdown("[Separador de Repositorio - GitHub](https://github.com/A-D-Vargas/PI_Mineria_Datos_1)")
+    st.markdown("### Código Fuente")
+    st.markdown("[Repositorio - GitHub](https://github.com/A-D-Vargas/PI_Mineria_Datos_1)")
